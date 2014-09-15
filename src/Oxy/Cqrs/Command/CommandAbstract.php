@@ -7,8 +7,6 @@
 
 namespace Oxy\Cqrs\Command;
 
-use Oxy\Core\Guid;
-
 /**
  * Base command class
  *
@@ -24,27 +22,15 @@ abstract class CommandAbstract implements CommandInterface
     protected $_commandName;
 
     /**
-     * @var Guid
-     */
-    protected $_guid;
-
-    /**
-     * @var string
-     */
-    protected $_realIdentifier;
-
-    /**
+     * Init command
+     *
      * @param string $commandName
-     * @param Guid   $guid
-     * @param mixed  $realIdentifier
      *
      * @return CommandAbstract
      */
-    public function __construct($commandName, Guid $guid, $realIdentifier)
+    public function __construct($commandName)
     {
         $this->_commandName = $commandName;
-        $this->_guid = $guid;
-        $this->_realIdentifier = $realIdentifier;
     }
 
     /**
@@ -55,25 +41,5 @@ abstract class CommandAbstract implements CommandInterface
     public function getCommandName()
     {
         return $this->_commandName;
-    }
-
-    /**
-     * Return GUID
-     *
-     * @return Guid
-     */
-    public function getGuid()
-    {
-        return $this->_guid;
-    }
-
-    /**
-     * Return real identifier
-     *
-     * @return string
-     */
-    public function getRealIdentifier()
-    {
-        return $this->_realIdentifier;
     }
 }

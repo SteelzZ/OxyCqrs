@@ -1,0 +1,97 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ac0ae7de6a44b1d47be0356254f4389b",
+    "packages": [
+        {
+            "name": "steelzz/oxy-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SteelzZ/OxyCore.git",
+                "reference": "dc1f21ddc3a70f1724669f4184ef587053007da3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SteelzZ/OxyCore/zipball/dc1f21ddc3a70f1724669f4184ef587053007da3",
+                "reference": "dc1f21ddc3a70f1724669f4184ef587053007da3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Oxy\\Core": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Tomas Bartkus",
+                    "email": "to.bartkus@gmail.com"
+                }
+            ],
+            "description": "Core library for Oxy family packages",
+            "support": {
+                "source": "https://github.com/SteelzZ/OxyCore/tree/master",
+                "issues": "https://github.com/SteelzZ/OxyCore/issues"
+            },
+            "time": "2014-09-06 12:14:00"
+        },
+        {
+            "name": "steelzz/oxy-queue",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SteelzZ/OxyQueue.git",
+                "reference": "6702f1de469e6333c34ef970dcf8a558cca4c188"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SteelzZ/OxyQueue/zipball/6702f1de469e6333c34ef970dcf8a558cca4c188",
+                "reference": "6702f1de469e6333c34ef970dcf8a558cca4c188",
+                "shasum": ""
+            },
+            "require": {
+                "steelzz/oxy-core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Oxy\\Queue": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Tomas Bartkus",
+                    "email": "to.bartkus@gmail.com"
+                }
+            ],
+            "description": "Queue library for php",
+            "support": {
+                "source": "https://github.com/SteelzZ/OxyQueue/tree/master",
+                "issues": "https://github.com/SteelzZ/OxyQueue/issues"
+            },
+            "time": "2014-09-06 16:52:23"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "steelzz/oxy-core": 20,
+        "steelzz/oxy-queue": 20
+    },
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

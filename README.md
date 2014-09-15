@@ -1,2 +1,2 @@
-OxyCqrs
-=======
+Oxy Cqrs package
+================
