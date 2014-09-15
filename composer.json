@@ -13,5 +13,13 @@
             "Oxy\\Cqrs" : "src"
         }
     },
-    "require": {}
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/steelzz/OxyCore"
+        }
+    ],
+    "require": {
+        "steelzz/oxy-core": "dev-master"
+    }
 }
